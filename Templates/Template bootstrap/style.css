@@ -1,0 +1,294 @@
+.header-bg-color {
+  background-color: #7a6ad8;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+}
+
+.empty-space{
+  height: 100px;
+}
+
+form {
+  border: 0px;
+  border-left: 1px;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: white;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  height: 44px;
+  width: 250px;
+  border-style: none;
+  padding: 15px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  padding: 15px 20px;
+}
+
+a:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+a:hover {
+  color: rgb(241, 240, 254);
+}
+
+.top {
+  background-image: url("/assets/images/banner-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-bottom-right-radius: 250px;
+  padding-bottom: 6%;
+  top: 0;
+}
+
+img {
+  border-radius: 25px;
+}
+
+.card-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #7a6ad8;
+  padding: 12%;
+  border-radius: 50%;
+  align-self: flex-end;
+}
+.card-circle:hover {
+  padding-top: 11%;
+  padding-bottom: 13%;
+}
+
+.card-rect {
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgb(241, 240, 254);
+  width: fit-content;
+  padding: 12%;
+  border-radius: 5%;
+  width: 75%;
+  margin-top: 100px;
+}
+
+.card {
+  width: 100%;
+  margin: 15px;
+  overflow: auto;
+  position: relative;
+  height: fit-content;
+  border: hidden;
+}
+
+button {
+  padding: 2% 5%;
+  background-color: white;
+  border: hidden;
+  border-radius: 24px;
+  width: fit-content;
+  margin: auto;
+  color: #7a6ad8;
+  font-weight: bold;
+}
+
+button:hover {
+  color: white;
+  background-color: #7a6ad8;
+}
+
+.accordion-bg {
+  background-color: #7a6ad8;
+  border-radius: 35px;
+}
+
+.item,
+.accordion-button {
+  border-radius: 30px;
+}
+
+.accordion-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.side-info {
+  background-color: rgb(241, 240, 254);
+}
+
+.h6-heading {
+  color: #7a6ad8;
+}
+
+.h2-heading {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.course-filter {
+  list-style-type: none;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.course-filter:hover {
+  color: #7a6ad8;
+}
+
+.course-cont {
+  border-radius: 35px;
+  background-color: rgb(241, 240, 254);
+  padding: 2px;
+  width: fit-content;
+  margin: auto;
+}
+
+.course-card {
+  background-color: rgb(241, 240, 254);
+  border-radius: 25px;
+  position: relative;
+}
+
+.course-image {
+  width: 346px;
+}
+
+.price {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: rgba(122, 106, 216, 0.95);
+  color: black;
+  width: 100px;
+  height: 100px;
+  border-bottom-left-radius: 70%;
+  border-top-right-radius: 25px;
+  color: white;
+  padding: 8%;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(241, 240, 254);
+  padding: 3%;
+  border-radius: 25px;
+  color: #7a6ad8;
+  font-weight: bolder;
+}
+
+.author {
+  color: #7a6ad8;
+  font-weight: bold;
+}
+
+.course-card {
+  &:hover {
+    .price {
+      width: 110px;
+      height: 110px;
+      padding: 9%;
+    }
+  }
+}
+
+.course-card {
+  &:hover {
+    .course-title {
+      color: #7a6ad8;
+    }
+  }
+}
+
+.stat-bg {
+  background-image: url("/assets/images/banner-bg.jpg");
+  height: 300px;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  align-items: center;
+}
+
+.stats {
+  position: relative;
+  top: 40%;
+  left: 100px;
+}
+
+h1,
+h6 {
+  color: white;
+  font-weight: bolder;
+}
+
+.socials {
+  list-style-type: none;
+  color:#7a6ad8;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 24px;
+}
+
+.socials:hover{
+    font-size: 30px;
+  }
+
+.category-team {
+  color: #000;
+}
+
+.team-card {
+  background-color: rgb(241, 240, 254);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.team-pic {
+  border-radius: 50%;
+  position: relative;
+  top: -110px;
+  margin: 16px;
+  width: 220px;
+  transition: .3s;
+}
+
+.team-info {
+  position: relative;
+  top: -90px;
+}
+
+.team-card {
+  &:hover {
+    .team-pic {
+      top:-120px;
+    }
+  }
+}
+
+.team-category{
+  color: #7a6ad8;
+  font-weight: 500;
+}
+
+h4{
+  font-weight: 500;
+}
