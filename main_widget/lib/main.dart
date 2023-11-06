@@ -14,25 +14,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a blue toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: const InsightCardDetail(
+        title: 'Your post-natal cycle',
+        image:
+            'https://images.pexels.com/photos/8244392/pexels-photo-8244392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        text:
+            'Start gentle exercise, by engage in light actvities like walking, stretching, or postnatal yoga to improve blood circulation and boost your energy levels. Take it slow and increase intensity as your body heals. Spend time outdoors with your baby. Enjoy the therapeutic benefits of nature. Take short strolls in nearby parks or gardens with your baby to uplift your mood and strengthen the bond between you both.',
+      ),
     );
   }
 }
